@@ -1,2 +1,2 @@
 # pomodo
-To Do List Wen app that uses the Pomodoro technique
+To Do List Web app that uses the Pomodoro technique.
