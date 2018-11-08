@@ -1,7 +1,7 @@
 # pomodo
-##👋Hello,
+## 👋Hello,
 
-#Welcome to Pomodo (or Pomo.do - I am not quite sure yet).
+# Welcome to Pomodo (or Pomo.do - I am not quite sure yet).
 <hr/>
 
 I plan to make a To Do list web app that integrates with a Pomodoro Timer - hence the name "Pomo" and "Do". In any case, I thought it was quite clever.
