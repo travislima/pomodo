@@ -9,8 +9,4 @@ I have not quite decided on a license as yet, since it is still in the very earl
 Chat soon! 🤘
 
 ![Screenshot](screenshot.png)
-<<<<<<< HEAD
-=======
 
-
->>>>>>> master
