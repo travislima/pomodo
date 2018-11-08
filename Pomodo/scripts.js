@@ -34,12 +34,17 @@ window.onload = function() {
         }
     }
 
-    //Add Strikethrough on completed to do list items.
+//Add Strikethrough on completed to do list items.
     function boxChecked(event) {
-    	const element = event.target;
-    	if(element.type === "checkbox") {
-    		element.parentNode.style.textDecoration = "line-through";
-    	}
+        const element = event.target;
+        if(element.type === "checkbox") {
+            if( element.checked ){
+                element.parentNode.style.textDecoration = "line-through";
+            }else{
+                element.parentNode.style.textDecoration = "none";
+            }
+            
+        }
     }
 }
 
