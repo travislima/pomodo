@@ -27,6 +27,7 @@ window.onload = function() {
             var item = `<li id="li-${id}">${text}
                         <input id="box-${id}" 
                                class="checkboxes"
+                               onclick="boxChecked(event)"
                                type="checkbox"></li>`;
             list.insertAdjacentHTML('beforeend', item);
             id++;
@@ -34,19 +35,22 @@ window.onload = function() {
         }
     }
 
-//Add Strikethrough on completed to do list items.
-    function boxChecked(event) {
+function boxChecked(event) {
         const element = event.target;
         if(element.type === "checkbox") {
             if( element.checked ){
                 element.parentNode.style.textDecoration = "line-through";
                 element.parentNode.style.opacity = 0.5;
-
+    
+                const parent = element.parentElement.parentElement;
+                parent.appendChild(element.parentElement);
             }else{
                 element.parentNode.style.textDecoration = "none";
                 element.parentNode.style.opacity = 1;
+
+                const parent = element.parentElement.parentElement;
+                parent.insertBefore(element.parentElement, parent.firstChild);
             }
-            
         }
     }
 }
