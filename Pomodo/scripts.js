@@ -1,5 +1,3 @@
-
-
 window.onload = function() {
     //variables
     var form = document.getElementById("pomodo-form");
@@ -8,8 +6,15 @@ window.onload = function() {
     var list = document.getElementById("pomodo-list");
     var id = 1;
 
-    //button event listener
+    //button event listener on mouse click
     btn.addEventListener("click", addTodoItem);
+
+    //button event listener on mouse click
+    input.addEventListener('keyup',function(e){
+        if (e.keyCode === 13) {
+            addTodoItem()
+            }
+        });
 
     //list event listener
     list.addEventListener("click", boxChecked);
