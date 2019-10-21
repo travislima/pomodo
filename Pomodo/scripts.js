@@ -22,7 +22,7 @@ window.onload = function() {
     //add todo item to list
     function addTodoItem() {
         if(input.value === "") {
-            alert("Please enter a To Do List Item.");
+            alert("Please enter a Task to proceed.");
         }
         else {
             if(list.style.borderTop === "") {
@@ -52,4 +52,3 @@ window.onload = function() {
         }
     }
 }
-
