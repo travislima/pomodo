@@ -9,14 +9,14 @@
     <body>
         <div class="hero">
             <div class="container">
-                <h1 class="text-center">Shut the F*ck up and Get it <strike>done</strike>.</h1>
-		            <p class="lead text-center">What <em>three</em> things are you going to do today?</p>
-                        	<div id="basicUsage" class="text-center">00:00:00</div>
+                <h1 class="text-center">Shut up and Get it <strike>done</strike>.</h1>
+		            <p class="lead text-center">What are you going to do today?</p>
+                        	<div id="countdownTimer" class="text-center">25 :00</div>
 			            <div class="row">
 
 			                <div id="pomodo-form" action="" class="col-8 mx-auto">
 			                  <div class="input-group">
-			                    <input type="input" class="form-control" id="pomodo-input" placeholder="List three tasks you want to do today"><span><button id="pomodo-btn" type="submit" class="btn btn-primary">Add Task</button></span>
+			                    <input type="input" class="form-control" id="pomodo-input" placeholder="List some tasks you want to do today"><span><button id="pomodo-btn" type="submit" class="btn btn-primary">Add Task</button></span>
 			                  </div>
 
 			                  
@@ -33,18 +33,5 @@
 <footer>
     <!-- Adding Scripts to footer for optimization purposes -->
     <script type="text/javascript" src="scripts.js"></script>
-
-    <!-- Timer Code -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/dist/easytimer.min.js"></script>
-        <script>
-            var timer = new Timer();
-            timer.start();
-            timer.addEventListener('secondsUpdated', function(e) {
-              $('#basicUsage').html(timer.getTimeValues().toString());
-            });
-    </script>
-
-
 </footer>
 </html>
